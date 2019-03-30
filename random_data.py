@@ -8,6 +8,28 @@ val=random.randint(1,6)
 #gives random values between 1 and 6 , 6 being inclusive
 
 
+colour=['red','blue','green']
+val=random.choice(colour) #chooses randomly a value from the list colour
+val=random.choice(colour,k=5)#chooses randomly 5 values from the list colour
+val=random.choice(colour,weights=[18,18,2],k=10)#this will pick 10 random values where probability of red and blue is more as according to their weights
+
+
+
+
+------------------------------------------------------------------------
+import random
+
+deck = list(range(1, 53))
+
+hand = random.sample(deck, k=5)
+print(hand)
+#here sample fuction chooses unique values out of the list and k=5(where k is the keyword) gives how many random vaues to be picked
+----------------------------------------------------------------------------
+
+
+
+
+
 ''' Super simple module to create basic random data for tutorials'''
 import random
 
