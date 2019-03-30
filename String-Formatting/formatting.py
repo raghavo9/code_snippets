@@ -41,8 +41,10 @@ print(sentence)
 # sentence = 'My name is {name} and I am {age} years old.'.format(**person)
 # print(sentence)
 
+
+#( PADING THE DIGITS WITH ZERO IN FRONT)
 # for i in range(1, 11):
-#     sentence = 'The value is {}'.format(i)
+#     sentence = 'The value is {:2}'.format(i) #THIS WILL PRINT THE NUMBERS IN TWO DIGITS
 #     print(sentence)
 
 
@@ -53,7 +55,9 @@ print(sentence)
 # print(sentence)
 
 
-sentence = '1 MB is equal to {} bytes'.format(1000**2)
+sentence = '1 MB is equal to {:","} bytes'.format(1000**2)
+# ADDING COMMA IN ANSWER AT THE REQUIRED PLACE
+
 
 print(sentence)
 
