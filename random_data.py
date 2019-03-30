@@ -1,3 +1,13 @@
+import random
+val=random.random()
+#it gives floating random values between 0-1 exclusive of 1
+val=random.uniform(1,10)
+#gives random floating values between 1 and 10 , 10 being exclusive
+
+val=random.randint(1,6)
+#gives random values between 1 and 6 , 6 being inclusive
+
+
 ''' Super simple module to create basic random data for tutorials'''
 import random
 
