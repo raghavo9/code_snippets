@@ -34,8 +34,42 @@ for f in os.listdir():
     # the numbers. So instead of 1, we'll make it 01. If we had hundreds of files then this would maybe need to be 001.
     # We can do this in Python with zfill
     f_number = f_number.strip()[1:].zfill(2)
+    
+    #MY_EXAMPLE
+    with open("num.txt",'w') as w:
+    for i in range(11):
+        w.write(str(i).zfill(2)+"\n")
+        
+t=open('num.txt')
+print(t.read())
+#OUTPUT
+#00
+#01
+#02
+#03
+#04
+#05
+#06
+#07
+#08
+#09
+#10
 
-    # print('{}-{}-{}{}'.format(f_number, f_course, f_title, file_ext))
+
+
+#you have to be in for loop for this 
+
+
+
+for f in os.listdir():
+    file_name, file_ext = os.path.splitext(f)
+    f_title, f_course, f_number = file_name.split('-')
+    f_title = f_title.strip()
+
+    f_course = f_course.strip()
+    f_number = f_number.strip()
+    f_number = f_number.strip()[1:].zfill(2)
+    print('{}-{}-{}{}'.format(f_number, f_course, f_title, file_ext))
 
     # You have the power to reformat in any way you see fit
     print('{}-{}{}'.format(f_number, f_title.strip(), file_ext.strip()))
@@ -43,6 +77,6 @@ for f in os.listdir():
     new_name = '{}-{}{}'.format(file_num, file_title, file_ext)
 
     os.rename(fn, new_name)
-
+#all the above lines for  renaming the files are in for loop
 
 # print(len(os.listdir()))
