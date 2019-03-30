@@ -16,7 +16,7 @@ val=random.choice(colour,weights=[18,18,2],k=10)#this will pick 10 random values
 
 
 
-------------------------------------------------------------------------
+#------------------------------------------------------------------------
 import random
 
 deck = list(range(1, 53))
@@ -24,7 +24,7 @@ deck = list(range(1, 53))
 hand = random.sample(deck, k=5)
 print(hand)
 #here sample fuction chooses unique values out of the list and k=5(where k is the keyword) gives how many random vaues to be picked
-----------------------------------------------------------------------------
+#----------------------------------------------------------------------------
 
 
 
