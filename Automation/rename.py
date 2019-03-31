@@ -76,7 +76,7 @@ for f in os.listdir():
 
     new_name = '{}-{}{}'.format(file_num, file_title, file_ext)
 
-    os.rename(fn, new_name)
+    os.rename(f, new_name)
 #all the above lines for  renaming the files are in for loop
 
 # print(len(os.listdir()))
